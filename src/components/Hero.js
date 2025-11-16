@@ -21,7 +21,7 @@ const Hero = () => {
           <div className='hero-bio'>
             <h3>Data Scientist</h3>
             <p>I specialize in transforming raw data into actionable intelligence that accelerates organizational performance. My experience spans statistical modeling, advanced analytics, data visualization, and full-cycle machine-learning development. I bring a structured, insights-driven approach to solving complex business challenges.</p>
-            <a href={cv} download="roshan's resume" target="_blank" id="download-cv" rel="noreferrer">Download CV<IoDownloadOutline /></a>
+            <a href={cv} download="Roshan_Kumar_CV.pdf" id="download-cv">Download CV<IoDownloadOutline /></a>
           </div>
         </div>
         <div id="hero-img">
