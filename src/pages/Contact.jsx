@@ -23,18 +23,22 @@ const Contact = () => {
     const serviceID = process.env.REACT_APP_SERVICE_ID
     const templateID = process.env.REACT_APP_TEMPLATE_ID
     const publicKey = process.env.REACT_APP_PUBLIC_KEY
+    // Basic validation for environment variables used by EmailJS
+    if (!serviceID || !templateID || !publicKey) {
+      console.error('EmailJS configuration missing. Check REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY in .env');
+      alert('Unable to send message: email service not configured.');
+      return;
+    }
 
     emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
-        console.log("send")
-        setData({ name: "", email: "", phone: "", message: "" })
-      })
-      .then((response) => {
-        updateSubmitted(true)
-
+        console.log('Email sent', response);
+        setData({ name: '', email: '', phone: '', message: '' });
+        updateSubmitted(true);
       })
       .catch((error) => {
-        console.log("something went wrong")
+        console.error('Email send error:', error);
+        alert('Something went wrong while sending your message. Please try again later.');
       })
   }
   const handleChange = (e) => {
@@ -92,7 +96,7 @@ const Contact = () => {
             <label htmlFor='message'>Message</label>
 
             <textarea id="message" name="message" value={data.message} onChange={(e) => handleChange(e)} required maxLength={200}></textarea>
-            <button id="submit-btn">submit</button>
+            <button id="submit-btn" type="submit">submit</button>
           </form>
         </div>
         <div className='contact-details'>
@@ -110,7 +114,7 @@ const Contact = () => {
             </div>
             <div className='contact-point'>
               <FaPaperPlane className={theme==="black"?"contact-icon contact-icon-dark":"contact-icon"}/>
-              <p><span>Mail: </span>roshan27july@gmail.com</p>
+              <p><span>Mail: </span>roshann.work@gmail.com</p>
             </div>
         </div>
         {submitted?<PopUp update={updateSubmitted}/>:""}
