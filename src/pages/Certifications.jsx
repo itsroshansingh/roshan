@@ -87,6 +87,8 @@ const Certifications = () => {
               <h3 className='issuer'>Issued By: <span className='institute'>internshala</span></h3>
             </div>
           </li>
+
+          
         </ul>
       </div>
     </section>

@@ -47,7 +47,7 @@ const Qualifications = () => {
         <div className={theme==="black"?"qualities q-dark":"qualities q-white"}>
             <div className={theme==="black"?"schooling s-dark":"schooling s-white"}>
                 <h2 className="h2">Education</h2>
-                <div className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
+                {/* <div className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
                     <div className={theme==="black"?"school-logo dark-logo":"school-logo"}>
                         <img src={icons[0].url} alt={"logo hai"} />
                     </div>
@@ -55,8 +55,8 @@ const Qualifications = () => {
                     <h3>Guru harkrishan public school (New Delhi)</h3>
                         <i>class 10</i>
                     </div>
-                </div>
-                <div className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
+                </div> */}
+                {/* <div className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
                     <div className={theme==="black"?"school-logo dark-logo":"school-logo"}>
                         <img src={icons[1].url} alt={"logo hai"} />
                     </div>
@@ -64,8 +64,8 @@ const Qualifications = () => {
                         <h3>Dr. N Jha college, (Darbhanga)</h3>
                         <i>class 12</i>
                     </div>
-                </div>
-                <div  className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
+                </div> */}
+                {/* <div  className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
                     <div className={theme==="black"?"school-logo dark-logo":"school-logo"}>
                         <img src={icons[2].url} alt={"logo hai"} />
                     </div>
@@ -73,11 +73,37 @@ const Qualifications = () => {
                         <h3>Maharishi Dayanand University (Rohtak)</h3>
                         <i>Bachlore of Technology (CSE)</i>
                     </div>
+                </div> */}
+                
+                
+                <div  className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
+                    <div className={theme==="black"?"school-logo dark-logo":"school-logo"}>
+                        <img src={icons[1].url} alt={"logo hai"} />
+                    </div>
+                    <div className={theme==="black"?"school-name dark-school-name":"school-name"}>
+                        <h3>Maharishi Dayanand University (Rohtak)</h3>
+                        <i>Master of Technology (AI/ML)</i>
+                    </div>
                 </div>
+
+                <div  className={theme==="black"?"inner-card dark-inner-card":"inner-card white-inner-card"}>
+                    <div className={theme==="black"?"school-logo dark-logo":"school-logo"}>
+                        <img src={icons[2].url} alt={"logo hai"} />
+                    </div>
+                    <div className={theme==="black"?"school-name dark-school-name":"school-name"}>
+                        <h3>Delhi Skill and Entrepreneurship University (Delhi)</h3>
+                        <i>Bachlore of Technology (CSE)</i>
+                    </div>
+                </div>
+
+
+
+
+                
             </div>
             <div className={theme==="black"?"job job-black":"job job-white"}>
                 <h2 className="h2">Jobs</h2>
-                <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
+                {/* <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
                     <div className={theme==="black"?"job-logo dark-logo":"job-logo"}>
                         <img src={jobicons[1].url} alt={"logo hai"} />
                     </div>
@@ -86,8 +112,8 @@ const Qualifications = () => {
                         <h4 className='comp-name'>Tejays Dynamics Ltd.</h4>
                         <i className='duration'>May 2021 - July 2021</i>
                     </div>
-                </div>
-                <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
+                </div> */}
+                {/* <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
                 <div className={theme==="black"?"job-logo dark-logo":"job-logo"}>
                         <img src={icons[0].url} alt={"logo hai"} />
                     </div>
@@ -96,7 +122,37 @@ const Qualifications = () => {
                         <h4 className='comp-name'>codingtribes.org</h4>
                         <i className='duration'>March 2023 - Present</i>
                     </div>
+                </div> */}
+
+
+                <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
+                <div className={theme==="black"?"job-logo dark-logo":"job-logo"}>
+                        <img src={jobicons[0].url} alt={"logo hai"} />
+                    </div>
+                    <div className="job-name">
+                    <h3 className="job-profile">Data Scientist</h3>
+                        <h4 className='comp-name'>codingtribes.org</h4>
+                        <i className='duration'>Jan 2023 - Dec 2023</i>
+                    </div>
                 </div>
+                <div className={theme==="black"?"visible visible-dark":"visible visible-white"}>
+                <div className={theme==="black"?"job-logo dark-logo":"job-logo"}>
+                        <img src={jobicons[1].url} alt={"logo hai"} />
+                    </div>
+                    <div className="job-name">
+                    <h3 className="job-profile">Data Scientist</h3>
+                        <h4 className='comp-name'>Wise Online Stores Private Limited</h4>
+                        <i className='duration'>Jan 2024 - Oct 2025</i>
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+
                 <div className='hidden'>
                     
                 </div>

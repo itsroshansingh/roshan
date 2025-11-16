@@ -16,12 +16,11 @@ const Hero = () => {
     <>
       <div className='hero' style={theme === "black" ? { backgroundColor: "#1C2826", color: "white" } : { backgroundColor: "#FFF9FB" }}>
         <div id="hero-intro" >
-          <h2 style={theme === "black" ? { color: "white" } : { color: "#4E4D5C" }}>welcome to my world</h2>
-          <h3 style={theme === "black" ? { color: "white" } : { color: "#4E4D5C" }}>Hi! i am <span>roshan kumar</span></h3>
+          <h2 style={theme === "black" ? { color: "white" } : { color: "#4E4D5C" }}>Welcome to My Portfolio</h2>
+          <h3 style={theme === "black" ? { color: "white" } : { color: "#4E4D5C" }}>Hi! I'm <span>Roshan Kumar</span></h3>
           <div className='hero-bio'>
-            <h3>data scientist</h3>
-            <p>I am proficient in extracting, analyzing, and interpreting complex datasets to drive informed business decisions.
-              Skilled in statistical analysis, data visualization, and utilizing cutting-edge tools to uncover actionable insights, contributing to organizational success through data-driven strategies.</p>
+            <h3>Data Scientist</h3>
+            <p>I specialize in transforming raw data into actionable intelligence that accelerates organizational performance. My experience spans statistical modeling, advanced analytics, data visualization, and full-cycle machine-learning development. I bring a structured, insights-driven approach to solving complex business challenges.</p>
             <a href={cv} download="roshan's resume" target="_blank" id="download-cv" rel="noreferrer">Download CV<IoDownloadOutline /></a>
           </div>
         </div>
@@ -31,15 +30,15 @@ const Hero = () => {
       </div>
       <div className={theme === "black" ? " experience experience-black" : " experience experience-white"}>
         <div className={theme === "black" ? "year-box year-box-black" : "year-box year-box-white"}>
-          <p id="years">01+</p>
+          <p id="years">3+</p>
           <p id="year-txt">Years of experience</p>
           <div id="satisfaction-box">
-            <p>100% clients satisfied</p>
+            <p>Focused on delivering data-driven business value.</p>
           </div>
         </div>
         <div className={theme === "black" ? "myself myself-black" : "myself myself-wnite"}>
           <h2>About Myself</h2>
-          <p>Detail-oriented data analyst skilled in extracting insights from complex datasets. Proficient in analytics tools, programming, and effective communication for impactful results.</p>
+          <p>AI/ML Data Scientist with hands-on expertise in machine learning, deep learning, and analytics engineering. Proven capability in developing predictive models, optimizing algorithms, and deploying end-to-end data pipelines. Adept at leveraging data to support strategic decision-making across academic and commercial environments. Passionate about turning complex problems into scalable, insight-oriented solutions.</p>
           <div className='cards'>
             <div className={theme === "black" ? "hero-inner-card hero-inner-card-black" : "hero-inner-card hero-inner-card-white"}>
               <div className='card-icon-box' >
@@ -49,7 +48,7 @@ const Hero = () => {
               <div className='card-txt'>
                 <h3>Artifical Intelligence</h3>
                 <p>
-                  AI revolutionizes industries, automating tasks, enhancing decision-making. Its learning ability evolves, shaping a future of innovation and efficiency.
+                  AI enables intelligent automation, enhanced decision-making, and operational efficiency. It continues to reshape industries through adaptive learning and innovation.
                 </p>
               </div>
 
@@ -65,7 +64,7 @@ const Hero = () => {
               <div className='card-txt'>
                 <h3>Data analysis</h3>
                 <p>
-                  AI revolutionizes industries, automating tasks, enhancing decision-making. Its learning ability evolves, shaping a future of innovation and efficiency.
+                  Data analytics empowers organizations with evidence-based insights, driving strategic choices and operational clarity.
                 </p>
               </div>
             </div>
@@ -77,7 +76,7 @@ const Hero = () => {
               <div className='card-txt'>
                 <h3>Machine learning</h3>
                 <p>
-                  AI subset, teaches computers to learn patterns from data. Enables predictions, automation, and smarter systems. Transformative technology.
+                  A core AI discipline that empowers systems to learn from data, enabling forecasting, automation, and outcome optimization.
                 </p>
               </div>
 
@@ -91,7 +90,7 @@ const Hero = () => {
               <div className='card-txt'>
                 <h3>Python</h3>
                 <p>
-                  Python, versatile programming language, powers web development, data science.
+                  A versatile programming language powering data science, ML engineering, automation, and modern application development.
                 </p>
               </div>
 
